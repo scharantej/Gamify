@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Configuration Page</title>
+</head>
+<body>
+<h1>Configuration</h1>
+<form action="/save_settings" method="POST">
+<label for="resolution">Resolution:</label>
+<input type="text" name="resolution" id="resolution" placeholder="1920x1080">
+
+<label for="graphics_quality">Graphics Quality:</label>
+<select name="graphics_quality" id="graphics_quality">
+<option value="low">Low</option>
+<option value="medium">Medium</option>
+<option value="high">High</option>
+<option value="ultra">Ultra</option>
+</select>
+
+<label for="sound_volume">Sound Volume:</label>
+<input type="range" name="sound_volume" id="sound_volume" min="0" max="10" step="1" value="5">
+
+<input type="submit" value="Save">
+<input type="reset" value="Cancel">
+</form>
+</body>
+</html>
+
+
